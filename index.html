@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>HackerSir_0420</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -12,11 +12,19 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+        <style>
+        h1, h2, h3, h4, h5, h6 {
+            text-transform: none !important;
+        }
+        </style>
+
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-background-video="./media/1.mp4"
+
+				<section data-background-video="./media/2.mp4"
                     data-background-video-loop data-background-video-muted data-background-opacity="0.4">
                     <div style="font-size: 2.5em; font-weight: 650;">
                         Penetration Test
@@ -25,7 +33,47 @@
                         AuTong | HackerSir | April 20, 2023
                     </div>
                 </section>
-                <section>Slide 2</section>
+                
+                <section>
+                    <h3>免責聲明</h3>
+                    <pre><code class="mybackground">
+中華民國刑法
+
+第 358 條 = 無故輸入他人帳號密碼、破解使用電腦之保護措施或利用電腦系統之漏洞
+            ，而入侵他人之電腦或其相關設備者
+
+第 359 條 = 無故取得、刪除或變更他人電腦或其相關設備之電磁紀錄，致生損害於公
+            眾或他人者
+
+第 360 條 = 無故以電腦程式或其他電磁方式干擾他人電腦或其相關設備，致生損害於
+            公眾或他人者
+
+第 362 條 = 製作專供犯本章之罪之電腦程式，而供自己或他人犯本章之罪，致生損害
+            於公眾或他人者
+                    </code></pre>
+                </section>
+
+                <section>
+                    <section>
+                        <div style="font-size: 2em; font-weight: 600;">滲透測試</div>
+                        <h4>Penetration Test (Pentest)</h4>
+                    </section>
+                    <section>
+                        <div style="font-size: 1.3em; font-weight: 600;"> 以黑帽駭客的思維與手法為企業檢測 </div>
+                        <p><ul>
+                            <li><p><h4> 系統安全 </h4></p></li>
+                            <li><p><h4> 網站安全 </h4></p></li>
+                            <li><p><h4> 網頁安全 </h4></p></li>
+                        </ul></p>
+                    </section>
+
+                </section>
+
+                <section>
+                    <section>
+                        <div style="font-size: 2em; font-weight: 600;">工具介紹</div>
+                    </section>
+                </section>
 
 			</div>
 		</div>
@@ -40,6 +88,7 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+                slideNumber: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
