@@ -74,30 +74,47 @@
                         <h4>Penetration Test (Pentest)</h4>
                     </section>
                     <section>
-                        <div style="font-size: 1.3em; font-weight: 600;"> 以黑帽駭客的思維與手法為企業檢測 </div>
+                        <div style="font-size: 1.3em; font-weight: 600;"> 以黑帽駭客的思維與手法</div>
+                        <div style="font-size: 1.3em; font-weight: 600;"> 為企業檢測資訊系統安全 </div>
                         <p><ul>
-                            <li><p><h4> 系統安全 </h4></p></li>
-                            <li><p><h4> 網站安全 </h4></p></li>
-                            <li><p><h4> 網頁安全 </h4></p></li>
+                            <li class="fragment"><p><h4> 設備安全 </h4></p></li>
+                            <li class="fragment"><p><h4> 網頁安全 </h4></p></li>
+                            <li class="fragment"><p><h4> 網站安全 </h4></p></li>
                         </ul></p>
+                    </section>
+                    <section data-auto-animate>
+                        <div data-id="web" style="font-size: 1.4em; font-weight: 600;">網站安全</div>
+                        <div class="fragment"><p>
+                            <h5>整個網路系統，包含除了 www 服務以外的服務，</h5>
+                            <h5>例如 ftp、ssh、snmp 等等</h5>
+                            </p></p></div>
+                    </section>
+                    <section data-auto-animate>
+                        <div data-id="web" style="font-size: 1.4em; font-weight: 600;">網站安全</div>
+                        <div>
+                            <p><ul>
+                                <li><p><h4> VPN </h4></p></li>
+                                <li><p><h4> 企業內部 </h4></p></li>
+                            </ul></p>
+                        <div>
                     </section>
                     <section data-auto-animate>
                         <div data-id="sop" style="font-size: 1.4em; font-weight: 600;">檢測流程</div>
                         <p><h5>沒有一定的標準流程，但有框架可參考</h5></p>
                         <p><ul>
-                            <li><p><h4><a href="https://attack.mitre.org/" target="_blank"> ATT&CK </a></h4></p></li>
-                            <li><p><h4><a href="https://attack.mitre.org/" target="_blank"> ATT&CK </a></h4></p></li>
+                            <p><h4><a href="https://attack.mitre.org/" target="_blank"> ATT&CK </a></h4></p>
+                            <p><h4><a href="https://www.isecom.org/OSSTMM.3.pdf" target="_blank"> OSSTMM </a></h4></p>
                         </ul></p>
                     </section>
                     <section data-auto-animate>
                         <div data-id="sop" style="font-size: 1.4em; font-weight: 600;">檢測流程</div>
-                        <p><ul>
-                            <li class="fragment"><p><h4> 確認標的 </h4></p></li>
-                            <li class="fragment"><p><h4> 偵查 </h4></p></li>
-                            <li class="fragment"><p><h4> 掃描 </h4></p></li>
-                            <li class="fragment"><p><h4> 弱點利用 </h4></p></li>
-                            <li class="fragment"><p><h4> 檢測報告 </h4></p></li>
-                        </ul></p>
+                        <div class="fragment"><p><ul>
+                            <li><p><h4> 確認標的 </h4></p></li>
+                            <li><p><h4> 偵查 </h4></p></li>
+                            <li><p><h4> 掃描 </h4></p></li>
+                            <li><p><h4> 弱點利用 </h4></p></li>
+                            <li><p><h4> 檢測報告 </h4></p></li>
+                            </ul></p><div>
                     </section>
                     <section data-auto-animate>
                         <div data-id="sop" style="font-size: 1.4em; font-weight: 600;">檢測流程</div>
@@ -119,9 +136,11 @@
                         <div data-id="target" style="font-size: 56px; font-weight: 600;">確認標的</div>
                         <p><ul>
                             <li class="fragment"><p><h4> 簽訂合約 </h4></p></li>
-                            <li class="fragment"><p><h4> 確認攻擊手法 </h4></p></li>
-                            <li class="fragment"><p><h4> 確認使用工具 </h4></p></li>
-                            <li class="fragment"><p><h4> 確認目標 IP、網址</h4></p></li>
+                            <div class="fragment">
+                                <li><p><h4> 確認攻擊手法 </h4></p></li>
+                                <li><p><h4> 確認使用工具 </h4></p></li>
+                                <li><p><h4> 確認目標 IP、網址</h4></p></li>
+                            </div>
                         </ul></p>
                     </section>
                     <section>
@@ -130,37 +149,184 @@
                         <h5>攻擊機：kali</h5>
                         </ul>
                     </section>
-                </section>
-
-                <section>
                     <section>
-                        <div style="font-size: 1.8em; font-weight: 600;">掃描</div>
+                        <h3>kali</h3>
+                        <p><ul>
+                            <li class="fragment"><p><h4> Linux 系統 </h4></p></li>
+                            <li class="fragment"><p><h4> 500 多種資安工具 </h4></p></li>
+                            <li class="fragment"><p><h4><a href="https://www.kali.org/tools/" target="_blank">參考資料</a></h4></p></li>
+                        </ul></p>
+                    </section>
+                    <section>
+                        <h4>確認攻擊機網段</h4>
+                        <p><pre style="font-size: 20px"><code data-line-numbers="1-2|2|3-11|4">┌──(kali㉿kali)-[~]
+└─$ ifconfig                        
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+    inet 192.168.92.135  netmask 255.255.255.0  broadcast 192.168.92.255
+    inet6 fe80::8d61:46a8:8de:b2e9  prefixlen 64  scopeid 0x20<link>
+    ether 00:0c:29:2c:4a:1c  txqueuelen 1000  (Ethernet)
+    RX packets 711  bytes 65806 (64.2 KiB)
+    RX errors 0  dropped 0  overruns 0  frame 0
+    TX packets 149  bytes 25128 (24.5 KiB)
+    TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+                        </code></pre></p>
+                    </section>
+                    <section data-auto-animate>
+                            <h6>192.168.92.135</h6>
+                            <h6>11000000.10101000.01011100.10000111</h6>
+                            <h6>11111111.11111111.11111111.00000000</h6>
+                    </section>
+                    <section data-auto-animate>
+                            <h6 style="color: #515050">11000000.10101000.01011100.10000111</h6>
+                            <h6 style="color: #515050">11111111.11111111.11111111.00000000</h6>
+                            <hr>
+                            <h6>11000000.10101000.01011100.00000000</h6>
+                    </section>
+                    <section data-auto-animate>
+                            <h6 style="color: #515050">11000000.10101000.01011100.10000111</h6>
+                            <h6 style="color: #515050">11111111.11111111.11111111.00000000</h6>
+                            <hr>
+                            <h6>11000000.10101000.01011100.00000000</h6>
+                            <h4>得知靶機為：192.168.92.XX</h4>
+                    </section>
+                    <section data-auto-animate>
+                            <h6 style="color: #515050">11000000.10101000.01011100.10000111</h6>
+                            <h6>11111111.11111111.11111111.00000000</h6>
+                            <hr>
+                            <h6 style="color: #515050">11000000.10101000.01011100.00000000</h6>
+                            <h4>得知靶機為：<span style="color: #515050">192.168.92.XX</span></h4>
+                            <h4>= 192.168.92.0/24</h4>
+                    </section>
+                    <section data-auto-animate>
+                            <h6 style="color: #515050">11000000.10101000.01011100.10000111</h6>
+                            <h6><span style="color: #a23">11111111.11111111.11111111</span>.00000000</h6>
+                            <hr>
+                            <h6 style="color: #515050">11000000.10101000.01011100.00000000</h6>
+                            <h4>得知靶機為：<span style="color: #515050">192.168.92.XX</span></h4>
+                            <h4>= 192.168.92.0/<span style="color: #a23">24</span></h4>
                     </section>
                 </section>
 
-                </section>
-
                 <section>
-                    <section>
-                        <div style="font-size: 1.8em; font-weight: 600;">偵查</div>
+                    <section data-auto-animate>
+                        <div data-id="target" style="font-size: 72px; font-weight: 600;">偵查</div>
+                    </section>
+                    <section data-auto-animate>
+                        <div data-id="target" style="font-size: 56px; font-weight: 600;">偵查</div>
+                        <p><ul>
+                            <li class="fragment"><p><h4> 不接觸目標為主 </h4></p></li>
+                            <div class="fragment">
+                                <li><p><h4> Google hacking </h4></p></li>
+                                <li><p><h4> site logic </h4></p></li>
+                                <li><p><h4> 其他公開情報</h4></p></li>
+                            </div>
+                        </ul></p>
                     </section>
                 </section>
 
                 <section>
+                    <section data-auto-animate>
+                        <div data-id="target2" style="font-size: 72px; font-weight: 600;">掃描</div>
+                    </section>
+                    <section data-auto-animate>
+                        <div data-id="target2" style="font-size: 56px; font-weight: 600;">掃描</div>
+                        <p><ul>
+                            <div class="fragment">
+                                <li><p><h4><a href="https://www.kali.org/tools/zaproxy/" target="_blank"> OWASP ZAP </a></h4></p></li>
+                                <li><p><h4><a href="https://www.tenable.com/blog/getting-started-with-nessus-on-kali-linux" target="_blank"> Nessus </a></h4></p></li>
+                            </div>
+                            <li class="fragment"><p><h4> Nmap </h4></p></li>
+                        </ul></p>
+                    </section>
                     <section>
-                        <div style="font-size: 1.8em; font-weight: 600;">掃描</div>
+                        <div data-id="target2" style="font-size: 56px; font-weight: 600;">Nmap</div>
+                        <p><h5 class="fragment">port scanner，由回傳的 banner 判定 port 狀態</h5></p>
+                    </section>
+                    <section>
+                        <h4>nmap [Options] {target specification}</h4>    
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">參數</div>
+                        <p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>參數</th>
+                                    <th>說明</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>-P</td>
+                                    <td>用於 ping</td>
+                                </tr>
+                                <tr>
+                                    <td>-s</td>
+                                    <td>用於 sacn</td>
+                                </tr>
+                                <tr>
+                                    <td>-p</td>
+                                    <td>用於 port</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </p>
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">-Pn</div>
+                        <p><ul>
+                            <li class="fragment"><p><h4> P：發送 ICMP 封包</h4></p></li>
+                            <li class="fragment"><p><h4> Windows 會擋</h4></p></li>
+                        </ul></p>
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">-sS</div>
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">-p</div>
+                        <p><ul>
+                            <li><p><h4> -p21 </h4></p></li>
+                            <li><p><h4> -p21,443 </h4></p></li>
+                            <li><p><h4> -p20-80 </h4></p></li>
+                            <li><p><h4> -p-</h4></p></li>
+                        </ul></p>
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">smb：port445</div>
+                        <h4>用於文件共享的協議</h4>    
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">NSE</div>
+                        <p><ul>
+                            <li><p><h4> nmap 的 script</h4></p></li>
+                            <li><p><h4><a href="https://www.infosecmatter.com/nmap-nse-library/" target="_blank"> 參考資料</a></h4></p></li>
+                        </ul></p>
+                    </section>
+                    <section>
+                        <p><pre style="font-size: 27px"><code>nmap -Pn -p445 --script smb-vuln-ms17-010 192.168.92.132</code></pre></p>
+                    </section>
+                </section>
+                    
+                <section>
+                    <section>
+                        <div data-id="target" style="font-size: 72px; font-weight: 600;">弱點利用</div>
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">永恆之藍(EternalBlue)</div>
+                        <p><ul>
+                            <li><p><h4>Windows SMB</h4></p></li>
+                            <li><p><h4>file extended attributes(FEA)</h4></p></li>
+                            <li><p><h4>轉為 NTFEA</h4></p></li>
+                        </ul></p>
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">metasploit</div>
                     </section>
                 </section>
 
                 <section>
-                    <section>
-                        <div style="font-size: 1.8em; font-weight: 600;">弱點利用</div>
-                    </section>
-                </section>
-
-                <section>
-                    <section>
-                        <div style="font-size: 1.8em; font-weight: 600;">檢測報告</div>
+                    <section data-auto-animate>
+                        <div data-id="target" style="font-size: 72px; font-weight: 600;">檢測報告</div>
                     </section>
                 </section>
 
